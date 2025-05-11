@@ -1,0 +1,158 @@
+const dummyData = [
+  {
+    "courseName": "Computer Science",
+    "semesters": [
+      {
+        "semester": 1,
+        "subjects": [
+          {
+            "name": "Mathematics",
+            "url": "https://example.com/math"
+          },
+          {
+            "name": "Physics",
+            "url": "https://example.com/physics"
+          },
+          {
+            "name": "Introduction to Programming",
+            "url": "https://example.com/intro-prog"
+          }
+        ]
+      },
+      {
+        "semester": 2,
+        "subjects": [
+          {
+            "name": "Data Structures",
+            "url": "https://example.com/dsa"
+          },
+          {
+            "name": "Algorithms",
+            "url": "https://example.com/algorithms"
+          },
+          {
+            "name": "Digital Logic",
+            "url": "https://example.com/digital-logic"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseName": "Mechanical Engineering",
+    "semesters": [
+      {
+        "semester": 1,
+        "subjects": [
+          {
+            "name": "Engineering Mathematics",
+            "url": "https://example.com/eng-math"
+          },
+          {
+            "name": "Engineering Mechanics",
+            "url": "https://example.com/mechanics"
+          },
+          {
+            "name": "Workshop Practice",
+            "url": "https://example.com/workshop"
+          }
+        ]
+      },
+      {
+        "semester": 2,
+        "subjects": [
+          {
+            "name": "Thermodynamics",
+            "url": "https://example.com/thermo"
+          },
+          {
+            "name": "Material Science",
+            "url": "https://example.com/materials"
+          },
+          {
+            "name": "Machine Drawing",
+            "url": "https://example.com/machine-drawing"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseName": "Electrical Engineering",
+    "semesters": [
+      {
+        "semester": 1,
+        "subjects": [
+          {
+            "name": "Basic Electronics",
+            "url": "https://example.com/basic-electronics"
+          },
+          {
+            "name": "Circuit Theory",
+            "url": "https://example.com/circuits"
+          },
+          {
+            "name": "Electrical Measurements",
+            "url": "https://example.com/measurements"
+          }
+        ]
+      },
+      {
+        "semester": 2,
+        "subjects": [
+          {
+            "name": "Power Systems",
+            "url": "https://example.com/power-systems"
+          },
+          {
+            "name": "Control Systems",
+            "url": "https://example.com/control"
+          },
+          {
+            "name": "Digital Electronics",
+            "url": "https://example.com/digital"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseName": "Civil Engineering",
+    "semesters": [
+      {
+        "semester": 1,
+        "subjects": [
+          {
+            "name": "Surveying",
+            "url": "https://example.com/surveying"
+          },
+          {
+            "name": "Building Materials",
+            "url": "https://example.com/materials"
+          },
+          {
+            "name": "Structural Analysis",
+            "url": "https://example.com/structures"
+          }
+        ]
+      },
+      {
+        "semester": 2,
+        "subjects": [
+          {
+            "name": "Soil Mechanics",
+            "url": "https://example.com/soil"
+          },
+          {
+            "name": "Hydraulics",
+            "url": "https://example.com/hydraulics"
+          },
+          {
+            "name": "Construction Management",
+            "url": "https://example.com/construction"
+          }
+        ]
+      }
+    ]
+  }
+];
