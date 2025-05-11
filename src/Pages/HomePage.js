@@ -20,7 +20,7 @@ export default function HomePage() {
     useEffect(() => {
         const fetchUser = async () => {
             try{
-            const response = await fetch("http://localhost:4000/checkLoggedIn", {
+            const response = await fetch("https://examguidebackend.onrender.com/checkLoggedIn", {
                 method: "GET",
                 credentials: "include"
             })

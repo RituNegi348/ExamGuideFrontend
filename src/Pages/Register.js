@@ -19,7 +19,7 @@ const Register = () => {
       password: password,
       confirmPassword: confirmPassword
     }
-    const response = await fetch("http://localhost:4000/register", {
+    const response = await fetch("https://examguidebackend.onrender.com/register", {
       method: "POST",
       body: JSON.stringify(user),
       headers: {

@@ -25,7 +25,7 @@ const Header = () => {
 
   const handleLogout = async () => {
     
-    const response = await fetch("http://localhost:4000/logout",{
+    const response = await fetch("https://examguidebackend.onrender.com/logout",{
       method: "POST",
       credentials: "include"
     });
@@ -62,7 +62,7 @@ const Header = () => {
     formData.append('file', uploadData.file);
 
     try {
-      const response = await fetch('http://localhost:4000/upload', {
+      const response = await fetch('https://examguidebackend.onrender.com/upload', {
         method: 'POST',
         credentials: 'include',
         body: formData

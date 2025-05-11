@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react';
+import  { useContext, useEffect } from 'react';
 import Header from '../Components/Header';
 import LeftSideBar from '../Components/LeftSideBar';
 import CourseContent from '../Components/CourseContent';
@@ -11,7 +11,7 @@ const MainPage = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('http://localhost:4000/getFiles');
+        const response = await fetch('https://examguidebackend.onrender.com/getFiles');
         if (!response.ok) {
           throw new Error('Network response was not ok');
         }
@@ -24,7 +24,7 @@ const MainPage = () => {
     };
 
     fetchData();
-  }, []); 
+  }, [data, setData]); 
 
   if(user==null){
     return <Navigate to="/"/>
