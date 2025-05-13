@@ -1,4 +1,4 @@
-import  { useContext, useEffect } from 'react';
+import  { useContext, useEffect, useCallback } from 'react';
 import Header from '../Components/Header';
 import LeftSideBar from '../Components/LeftSideBar';
 import CourseContent from '../Components/CourseContent';
@@ -8,8 +8,7 @@ import { userContext } from '../Context/userContext';
 const MainPage = () => {
   const { user, setData, data } = useContext(userContext);
 
-  useEffect(() => {
-    const fetchData = async () => {
+  const fetchData = useCallback( async () => {
       try {
         const response = await fetch('https://examguidebackend.onrender.com/getFiles');
         if (!response.ok) {
@@ -21,10 +20,11 @@ const MainPage = () => {
       } catch (error) {
         console.error('Error fetching data:', error);
       }
-    };
+    }, [])
 
+  useEffect(() => {
     fetchData();
-  }, []); 
+  }, [fetchData]); 
 
   if(user==null){
     return <Navigate to="/"/>
