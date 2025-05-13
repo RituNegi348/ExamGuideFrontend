@@ -20,7 +20,7 @@ const MainPage = () => {
       } catch (error) {
         console.error('Error fetching data:', error);
       }
-    }, [])
+    }, [data, setData])
 
   useEffect(() => {
     fetchData();
