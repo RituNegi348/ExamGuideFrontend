@@ -1,4 +1,4 @@
-import  { useContext, useEffect, useCallback } from 'react';
+import  { useContext, useEffect } from 'react';
 import Header from '../Components/Header';
 import LeftSideBar from '../Components/LeftSideBar';
 import CourseContent from '../Components/CourseContent';
@@ -8,7 +8,7 @@ import { userContext } from '../Context/userContext';
 const MainPage = () => {
   const { user, setData, data } = useContext(userContext);
 
-  const fetchData = useCallback( async () => {
+  const fetchData = async () => {
       try {
         const response = await fetch('https://examguidebackend.onrender.com/getFiles');
         if (!response.ok) {
@@ -20,11 +20,12 @@ const MainPage = () => {
       } catch (error) {
         console.error('Error fetching data:', error);
       }
-    }, [data, setData])
+    };
 
   useEffect(() => {
     fetchData();
-  }, [fetchData]); 
+    //eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []); 
 
   if(user==null){
     return <Navigate to="/"/>
