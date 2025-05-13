@@ -24,7 +24,7 @@ const MainPage = () => {
     };
 
     fetchData();
-  }, [data, setData]); 
+  }, []); 
 
   if(user==null){
     return <Navigate to="/"/>
